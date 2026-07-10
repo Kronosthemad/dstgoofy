@@ -44,6 +44,177 @@ AddPrefabPostInit("wilson", function(inst)
     end)
 end)
 
+AddPrefabPostInit("willow", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("wolfgang", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("wendy", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("WX-78", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("wickerbottom", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+
+AddPrefabPostInit("woodie", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("wes", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("Maxwell", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
+
+AddPrefabPostInit("wagstaff", function(inst)
+    -- Verify the component exists before trying to modify it
+    if inst.components.health then
+        inst.components.health:SetMaxHealth(250) -- Default is 150
+    end
+
+    if inst.components.sanity then
+        inst.components.sanity:SetMax(200)
+    end
+
+    -- You can also listen for events specific to this instance
+    inst:ListenForEvent("attacked", function(inst, data)
+        -- Give Wilson a line of dialogue whenever he takes damage
+        if inst.components.talker then
+            inst.components.talker:Say("That didn't feel very scientific!")
+        end
+    end)
+end)
 
 -- 1. Grab the global Component class from the engine environment
 local Combat = REQDONTSTARVE and require("components/combat") or _G.require("components/combat")
