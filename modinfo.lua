@@ -1,5 +1,5 @@
-name = "My First Local Mod"
-description = "A simple starting point for testing things out."
+name = "Krono's Goofy Mod"
+description = "This mod adds a few goofy features to the game, including new dialogue for characters when they take damage and logs are edible."
 author = "Eli Weatherby"
 version = "1.0.0"
 
