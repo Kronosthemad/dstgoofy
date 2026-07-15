@@ -6,10 +6,9 @@ A mod for Don't Starve Together
 ## Installation
 
 it needs to go in the mod folder
-
-```powershell
-C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together\mods\DSTUtils
-```
+[
+C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together\mods\DSTGoofy
+]
 
 You can install it by running
 
